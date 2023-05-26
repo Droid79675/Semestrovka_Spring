@@ -8,6 +8,13 @@ apply(plugin = "io.spring.dependency-management")
 group = "ru.kpfu.itis.emelyanov"
 version = "1.0-SNAPSHOT"
 
+tasks.jar {
+    enabled = false
+    manifest {
+        attributes["Main-Class"] = "ru.kpfu.itis.emelyanov"
+    }
+}
+
 repositories {
     mavenCentral()
 }
