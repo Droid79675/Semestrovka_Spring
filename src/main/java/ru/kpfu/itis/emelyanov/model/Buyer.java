@@ -29,7 +29,7 @@ public class Buyer {
     @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false, length = 11)
+    @Column(nullable = false, length = 32)
     private String email;
 
     @OneToMany(mappedBy = "buyer")
